@@ -1,0 +1,9 @@
+method,f1,false_accusations,missed
+all content signals,0.585,13.417,0.0
+one signal: exact_text,0.562,2.833,10.0
+one signal: near_duplicate,0.589,10.167,1.5
+one signal: same_link,0.653,1.75,10.0
+one signal: same_meaning,0.585,13.417,0.0
+one signal: synchronized_timing,0.297,115.0,6.667
+oracle cluster choice (ceiling),0.999,0.083,0.0
+scripted analyst,0.73,7.25,0.0

@@ -1,0 +1,11 @@
+,f1,f1,f1,f1,false_accusations,false_accusations,false_accusations,false_accusations
+kind,ai-rewrite,copy-paste,mixed,quiet,ai-rewrite,copy-paste,mixed,quiet
+method,,,,,,,,
+all content signals,0.828,0.63,0.883,0.0,9.667,24.333,10.667,9.0
+one signal: exact_text,0.0,0.957,0.625,0.667,4.0,2.0,4.0,1.333
+one signal: near_duplicate,0.763,0.721,0.873,0.0,8.667,17.0,8.0,7.0
+one signal: same_link,0.0,0.977,0.636,1.0,3.0,1.0,3.0,0.0
+one signal: same_meaning,0.828,0.63,0.883,0.0,9.667,24.333,10.667,9.0
+one signal: synchronized_timing,0.263,0.775,0.149,0.0,111.667,27.667,138.667,182.0
+oracle cluster choice (ceiling),1.0,1.0,0.996,1.0,0.0,0.0,0.333,0.0
+scripted analyst,0.88,0.752,0.957,0.333,6.0,14.667,3.667,4.667

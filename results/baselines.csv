@@ -1,0 +1,97 @@
+case,kind,method,flagged,true_positives,false_accusations,missed,precision,recall,f1
+quiet-0,quiet,one signal: exact_text,0,0,0,0,1.0,,1.0
+quiet-0,quiet,one signal: same_link,0,0,0,0,1.0,,1.0
+quiet-0,quiet,one signal: near_duplicate,3,0,3,0,0.0,,0.0
+quiet-0,quiet,one signal: same_meaning,6,0,6,0,0.0,,0.0
+quiet-0,quiet,one signal: synchronized_timing,187,0,187,0,0.0,,0.0
+quiet-0,quiet,all content signals,6,0,6,0,0.0,,0.0
+quiet-0,quiet,scripted analyst,0,0,0,0,1.0,,1.0
+quiet-0,quiet,oracle cluster choice (ceiling),0,0,0,0,1.0,,1.0
+quiet-1,quiet,one signal: exact_text,0,0,0,0,1.0,,1.0
+quiet-1,quiet,one signal: same_link,0,0,0,0,1.0,,1.0
+quiet-1,quiet,one signal: near_duplicate,3,0,3,0,0.0,,0.0
+quiet-1,quiet,one signal: same_meaning,5,0,5,0,0.0,,0.0
+quiet-1,quiet,one signal: synchronized_timing,188,0,188,0,0.0,,0.0
+quiet-1,quiet,all content signals,5,0,5,0,0.0,,0.0
+quiet-1,quiet,scripted analyst,5,0,5,0,0.0,,0.0
+quiet-1,quiet,oracle cluster choice (ceiling),0,0,0,0,1.0,,1.0
+quiet-2,quiet,one signal: exact_text,4,0,4,0,0.0,,0.0
+quiet-2,quiet,one signal: same_link,0,0,0,0,1.0,,1.0
+quiet-2,quiet,one signal: near_duplicate,15,0,15,0,0.0,,0.0
+quiet-2,quiet,one signal: same_meaning,16,0,16,0,0.0,,0.0
+quiet-2,quiet,one signal: synchronized_timing,171,0,171,0,0.0,,0.0
+quiet-2,quiet,all content signals,16,0,16,0,0.0,,0.0
+quiet-2,quiet,scripted analyst,9,0,9,0,0.0,,0.0
+quiet-2,quiet,oracle cluster choice (ceiling),0,0,0,0,1.0,,1.0
+copy-paste-0,copy-paste,one signal: exact_text,20,20,0,0,1.0,1.0,1.0
+copy-paste-0,copy-paste,one signal: same_link,20,20,0,0,1.0,1.0,1.0
+copy-paste-0,copy-paste,one signal: near_duplicate,50,20,30,0,0.4,1.0,0.5714285714285714
+copy-paste-0,copy-paste,one signal: same_meaning,55,20,35,0,0.36363636363636365,1.0,0.5333333333333333
+copy-paste-0,copy-paste,one signal: synchronized_timing,20,20,0,0,1.0,1.0,1.0
+copy-paste-0,copy-paste,all content signals,55,20,35,0,0.36363636363636365,1.0,0.5333333333333333
+copy-paste-0,copy-paste,scripted analyst,47,20,27,0,0.425531914893617,1.0,0.5970149253731343
+copy-paste-0,copy-paste,oracle cluster choice (ceiling),20,20,0,0,1.0,1.0,1.0
+copy-paste-1,copy-paste,one signal: exact_text,20,20,0,0,1.0,1.0,1.0
+copy-paste-1,copy-paste,one signal: same_link,20,20,0,0,1.0,1.0,1.0
+copy-paste-1,copy-paste,one signal: near_duplicate,34,20,14,0,0.5882352941176471,1.0,0.7407407407407407
+copy-paste-1,copy-paste,one signal: same_meaning,38,20,18,0,0.5263157894736842,1.0,0.6896551724137931
+copy-paste-1,copy-paste,one signal: synchronized_timing,103,20,83,0,0.1941747572815534,1.0,0.3252032520325203
+copy-paste-1,copy-paste,all content signals,38,20,18,0,0.5263157894736842,1.0,0.6896551724137931
+copy-paste-1,copy-paste,scripted analyst,32,20,12,0,0.625,1.0,0.7692307692307693
+copy-paste-1,copy-paste,oracle cluster choice (ceiling),20,20,0,0,1.0,1.0,1.0
+copy-paste-2,copy-paste,one signal: exact_text,26,20,6,0,0.7692307692307693,1.0,0.8695652173913043
+copy-paste-2,copy-paste,one signal: same_link,23,20,3,0,0.8695652173913043,1.0,0.9302325581395349
+copy-paste-2,copy-paste,one signal: near_duplicate,27,20,7,0,0.7407407407407407,1.0,0.851063829787234
+copy-paste-2,copy-paste,one signal: same_meaning,40,20,20,0,0.5,1.0,0.6666666666666666
+copy-paste-2,copy-paste,one signal: synchronized_timing,20,20,0,0,1.0,1.0,1.0
+copy-paste-2,copy-paste,all content signals,40,20,20,0,0.5,1.0,0.6666666666666666
+copy-paste-2,copy-paste,scripted analyst,25,20,5,0,0.8,1.0,0.8888888888888888
+copy-paste-2,copy-paste,oracle cluster choice (ceiling),20,20,0,0,1.0,1.0,1.0
+ai-rewrite-0,ai-rewrite,one signal: exact_text,0,0,0,20,0.0,0.0,0.0
+ai-rewrite-0,ai-rewrite,one signal: same_link,0,0,0,20,0.0,0.0,0.0
+ai-rewrite-0,ai-rewrite,one signal: near_duplicate,26,17,9,3,0.6538461538461539,0.85,0.7391304347826086
+ai-rewrite-0,ai-rewrite,one signal: same_meaning,29,20,9,0,0.6896551724137931,1.0,0.8163265306122449
+ai-rewrite-0,ai-rewrite,one signal: synchronized_timing,140,19,121,1,0.1357142857142857,0.95,0.2375
+ai-rewrite-0,ai-rewrite,all content signals,29,20,9,0,0.6896551724137931,1.0,0.8163265306122449
+ai-rewrite-0,ai-rewrite,scripted analyst,26,20,6,0,0.7692307692307693,1.0,0.8695652173913043
+ai-rewrite-0,ai-rewrite,oracle cluster choice (ceiling),20,20,0,0,1.0,1.0,1.0
+ai-rewrite-1,ai-rewrite,one signal: exact_text,12,0,12,20,0.0,0.0,0.0
+ai-rewrite-1,ai-rewrite,one signal: same_link,9,0,9,20,0.0,0.0,0.0
+ai-rewrite-1,ai-rewrite,one signal: near_duplicate,34,17,17,3,0.5,0.85,0.6296296296296297
+ai-rewrite-1,ai-rewrite,one signal: same_meaning,40,20,20,0,0.5,1.0,0.6666666666666666
+ai-rewrite-1,ai-rewrite,one signal: synchronized_timing,102,20,82,0,0.19607843137254902,1.0,0.32786885245901637
+ai-rewrite-1,ai-rewrite,all content signals,40,20,20,0,0.5,1.0,0.6666666666666666
+ai-rewrite-1,ai-rewrite,scripted analyst,32,20,12,0,0.625,1.0,0.7692307692307693
+ai-rewrite-1,ai-rewrite,oracle cluster choice (ceiling),20,20,0,0,1.0,1.0,1.0
+ai-rewrite-2,ai-rewrite,one signal: exact_text,0,0,0,20,0.0,0.0,0.0
+ai-rewrite-2,ai-rewrite,one signal: same_link,0,0,0,20,0.0,0.0,0.0
+ai-rewrite-2,ai-rewrite,one signal: near_duplicate,17,17,0,3,1.0,0.85,0.918918918918919
+ai-rewrite-2,ai-rewrite,one signal: same_meaning,20,20,0,0,1.0,1.0,1.0
+ai-rewrite-2,ai-rewrite,one signal: synchronized_timing,151,19,132,1,0.12582781456953643,0.95,0.2222222222222222
+ai-rewrite-2,ai-rewrite,all content signals,20,20,0,0,1.0,1.0,1.0
+ai-rewrite-2,ai-rewrite,scripted analyst,20,20,0,0,1.0,1.0,1.0
+ai-rewrite-2,ai-rewrite,oracle cluster choice (ceiling),20,20,0,0,1.0,1.0,1.0
+mixed-0,mixed,one signal: exact_text,24,20,4,20,0.8333333333333334,0.5,0.625
+mixed-0,mixed,one signal: same_link,24,20,4,20,0.8333333333333334,0.5,0.625
+mixed-0,mixed,one signal: near_duplicate,45,37,8,3,0.8222222222222222,0.925,0.8705882352941177
+mixed-0,mixed,one signal: same_meaning,51,40,11,0,0.7843137254901961,1.0,0.8791208791208791
+mixed-0,mixed,one signal: synchronized_timing,192,13,179,27,0.06770833333333333,0.325,0.11206896551724138
+mixed-0,mixed,all content signals,51,40,11,0,0.7843137254901961,1.0,0.8791208791208791
+mixed-0,mixed,scripted analyst,45,40,5,0,0.8888888888888888,1.0,0.9411764705882353
+mixed-0,mixed,oracle cluster choice (ceiling),40,40,0,0,1.0,1.0,1.0
+mixed-1,mixed,one signal: exact_text,25,20,5,20,0.8,0.5,0.6153846153846154
+mixed-1,mixed,one signal: same_link,25,20,5,20,0.8,0.5,0.6153846153846154
+mixed-1,mixed,one signal: near_duplicate,49,36,13,4,0.7346938775510204,0.9,0.8089887640449438
+mixed-1,mixed,one signal: same_meaning,53,40,13,0,0.7547169811320755,1.0,0.8602150537634409
+mixed-1,mixed,one signal: synchronized_timing,143,16,127,24,0.11188811188811189,0.4,0.17486338797814208
+mixed-1,mixed,all content signals,53,40,13,0,0.7547169811320755,1.0,0.8602150537634409
+mixed-1,mixed,scripted analyst,45,40,5,0,0.8888888888888888,1.0,0.9411764705882353
+mixed-1,mixed,oracle cluster choice (ceiling),40,40,0,0,1.0,1.0,1.0
+mixed-2,mixed,one signal: exact_text,23,20,3,20,0.8695652173913043,0.5,0.6349206349206349
+mixed-2,mixed,one signal: same_link,20,20,0,20,1.0,0.5,0.6666666666666666
+mixed-2,mixed,one signal: near_duplicate,41,38,3,2,0.926829268292683,0.95,0.9382716049382716
+mixed-2,mixed,one signal: same_meaning,48,40,8,0,0.8333333333333334,1.0,0.9090909090909091
+mixed-2,mixed,one signal: synchronized_timing,123,13,110,27,0.10569105691056911,0.325,0.15950920245398773
+mixed-2,mixed,all content signals,48,40,8,0,0.8333333333333334,1.0,0.9090909090909091
+mixed-2,mixed,scripted analyst,41,40,1,0,0.975609756097561,1.0,0.9876543209876543
+mixed-2,mixed,oracle cluster choice (ceiling),41,40,1,0,0.975609756097561,1.0,0.9876543209876543

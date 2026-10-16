@@ -1,0 +1,13 @@
+model,case,kind,steps,finished,n_tool_calls,signals_used,cited_unseen,flagged,true_positives,false_accusations,missed,precision,recall,f1
+ollama:llama3.1:8b,quiet-0,quiet,7,True,6,3,0,3,0,3,0,0.0,,0.0
+ollama:llama3.1:8b,quiet-1,quiet,7,True,6,3,0,3,0,3,0,0.0,,0.0
+ollama:llama3.1:8b,quiet-2,quiet,13,True,10,3,0,9,0,9,0,0.0,,0.0
+ollama:llama3.1:8b,copy-paste-0,copy-paste,8,True,7,2,0,20,20,0,0,1.0,1.0,1.0
+ollama:llama3.1:8b,copy-paste-1,copy-paste,9,True,5,2,0,20,20,0,0,1.0,1.0,1.0
+ollama:llama3.1:8b,copy-paste-2,copy-paste,14,True,12,1,0,26,20,6,0,0.7692307692307693,1.0,0.8695652173913043
+ollama:llama3.1:8b,ai-rewrite-0,ai-rewrite,14,True,12,3,0,26,17,9,3,0.6538461538461539,0.85,0.7391304347826086
+ollama:llama3.1:8b,ai-rewrite-1,ai-rewrite,15,False,15,2,0,0,0,0,20,0.0,0.0,0.0
+ollama:llama3.1:8b,ai-rewrite-2,ai-rewrite,15,False,13,3,0,0,0,0,20,0.0,0.0,0.0
+ollama:llama3.1:8b,mixed-0,mixed,15,False,12,2,0,0,0,0,40,0.0,0.0,0.0
+ollama:llama3.1:8b,mixed-1,mixed,11,True,9,2,0,20,20,0,20,1.0,0.5,0.6666666666666666
+ollama:llama3.1:8b,mixed-2,mixed,12,True,8,2,0,20,20,0,20,1.0,0.5,0.6666666666666666

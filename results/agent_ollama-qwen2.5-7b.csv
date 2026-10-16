@@ -1,0 +1,13 @@
+model,case,kind,steps,finished,n_tool_calls,signals_used,cited_unseen,flagged,true_positives,false_accusations,missed,precision,recall,f1
+ollama:qwen2.5:7b,quiet-0,quiet,6,True,5,2,0,3,0,3,0,0.0,,0.0
+ollama:qwen2.5:7b,quiet-1,quiet,8,True,7,2,0,3,0,3,0,0.0,,0.0
+ollama:qwen2.5:7b,quiet-2,quiet,13,True,11,2,1,9,0,9,0,0.0,,0.0
+ollama:qwen2.5:7b,copy-paste-0,copy-paste,15,False,7,2,0,0,0,0,20,0.0,0.0,0.0
+ollama:qwen2.5:7b,copy-paste-1,copy-paste,15,False,6,2,0,0,0,0,20,0.0,0.0,0.0
+ollama:qwen2.5:7b,copy-paste-2,copy-paste,15,False,15,1,0,0,0,0,20,0.0,0.0,0.0
+ollama:qwen2.5:7b,ai-rewrite-0,ai-rewrite,8,True,7,1,0,9,0,9,20,0.0,0.0,0.0
+ollama:qwen2.5:7b,ai-rewrite-1,ai-rewrite,13,True,11,2,0,9,0,9,20,0.0,0.0,0.0
+ollama:qwen2.5:7b,ai-rewrite-2,ai-rewrite,9,True,8,3,0,17,17,0,3,1.0,0.85,0.918918918918919
+ollama:qwen2.5:7b,mixed-0,mixed,8,True,7,1,2,24,20,4,20,0.8333333333333334,0.5,0.625
+ollama:qwen2.5:7b,mixed-1,mixed,7,True,6,1,1,20,20,0,20,1.0,0.5,0.6666666666666666
+ollama:qwen2.5:7b,mixed-2,mixed,15,False,9,2,0,0,0,0,40,0.0,0.0,0.0

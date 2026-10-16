@@ -59,7 +59,7 @@ def fig_overview():
     axes[1].set_xlabel("Ordinary accounts wrongly accused, per case")
     axes[1].set_title("False accusations", fontsize=10.5)
     axes[0].set_yticks(y, labels, fontsize=9); axes[0].invert_yaxis()
-    fig.suptitle("Every detector catches campaigns; the hard part is deciding which clusters are campaigns",
+    fig.suptitle("Small model agents score below a fixed rule, though their tools held everything needed for a perfect score",
                  x=0.01, ha="left", fontweight="bold", fontsize=11.5)
     fig.tight_layout()
     save(fig, "fig1_overview.png")

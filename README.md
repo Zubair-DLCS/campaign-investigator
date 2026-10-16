@@ -43,6 +43,37 @@ one or two hidden campaigns. Without any language model:
 
 ![By kind of case](figures/fig2_by_kind.png)
 
+## Finding 2: small open-model agents do worse than a fixed rule
+
+Two open models (Qwen 2.5 7B and Llama 3.1 8B, run locally with Ollama, temperature 0, 15
+turns per case) investigated all 12 cases with the same tools.
+
+| | Llama 3.1 8B | Qwen 2.5 7B | Scripted rule |
+|---|---|---|---|
+| F1 (mean of 12 cases) | 0.41 | 0.18 | 0.73 |
+| Ordinary accounts accused per case | 2.5 | 3.1 | 7.2 |
+| Campaign accounts missed per case | 10.3 | 15.3 | 0 |
+
+Accusing fewer people is not caution; it comes from finding less. The traces
+(`results/trace_*.jsonl`, summarised in `results/failure_modes.csv`) show four failure modes:
+
+- **They always find something.** In all 6 runs on cases with no campaign, the agent accused
+  someone (5 ordinary accounts per case on average), usually the first small cluster it saw,
+  with a confident explanation such as "they all post exact copies of each other's posts".
+- **They search where the light is.** Llama never once consulted the "same meaning" signal,
+  the only one that exposes AI-rewritten campaigns; Qwen used it in 3 of 12 runs. Of six
+  AI-rewritten campaigns, each model found one.
+- **They stop at the first campaign.** In none of the 6 mixed-case runs did an agent find
+  both campaigns; each reported the copy-paste campaign and stopped.
+- **They run out of time.** 7 of 24 runs used all 15 turns on inspecting individual accounts
+  and never filed a report, including Qwen on all three copy-paste cases, the easiest in the
+  set.
+
+The judgement gap from Finding 1 is real: these agents had every piece of evidence needed
+for a perfect score in their tool outputs, and did not use it. Stronger models, a longer turn
+budget, or an explicit checklist ("consult every signal; a case may have no campaign") are the
+obvious next experiments; the code runs any OpenAI-compatible model unchanged.
+
 ## The agent
 
 `src/agent.py`. The agent receives a short brief (find coordinated accounts; ordinary people
@@ -63,8 +94,8 @@ what to run and what to believe. Each run records the full trace of actions and 
 explanation (`results/trace_*.jsonl`), so every accusation can be audited back to the evidence
 the agent saw.
 
-Measured for each model: F1, false accusations, missed accounts, steps used, which signals it
-consulted, and whether it cited clusters it never looked at.
+Measured for each model: F1, false accusations, missed accounts, turns used, which signals it
+consulted, and whether it filed a report at all.
 
 ## Cases
 
@@ -112,8 +143,8 @@ and pass `--provider` and `--model`.
   comparisons between models.
 - **The oracle is a ceiling, not a method.** It shows what perfect cluster-level judgement
   would achieve with these detectors.
-- **Small open models.** The agent design is model-agnostic; stronger hosted models may do
-  better at the same task.
+- **Two small open models, one prompt.** Larger hosted models, or a different brief, may
+  behave very differently; the results describe these models with this design.
 
 ## Credits
 

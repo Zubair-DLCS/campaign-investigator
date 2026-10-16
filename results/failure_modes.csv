@@ -1,0 +1,9 @@
+,llama3.1:8b,qwen2.5:7b
+mean F1,0.41,0.18
+runs that ran out of turns without a report,3 of 12,4 of 12
+no-campaign cases where it accused someone,3 of 3,3 of 3
+ordinary accounts accused per no-campaign case,5.0,5.0
+runs that ever consulted the 'same meaning' signal,0 of 12,3 of 12
+"AI-rewritten campaigns found (of 6: 3 alone, 3 in mixed cases)",1,1
+mixed cases where both campaigns were found,0 of 3,0 of 3
+mean turns used,11.7,11.0

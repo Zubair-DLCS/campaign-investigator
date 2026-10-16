@@ -64,7 +64,8 @@ Accusing fewer people is not caution; it comes from finding less. The traces
   the only one that exposes AI-rewritten campaigns; Qwen used it in 3 of 12 runs. Of six
   AI-rewritten campaigns, each model found one.
 - **They stop at the first campaign.** In none of the 6 mixed-case runs did an agent find
-  both campaigns; each reported the copy-paste campaign and stopped.
+  both campaigns: whenever it filed a report, it named the copy-paste campaign and missed the
+  AI-rewritten one.
 - **They run out of time.** 7 of 24 runs used all 15 turns on inspecting individual accounts
   and never filed a report, including Qwen on all three copy-paste cases, the easiest in the
   set.

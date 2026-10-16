@@ -2,7 +2,8 @@
 The benchmark and detectors come from Beyond Copy-Paste
 (https://github.com/Zubair-DLCS/beyond-copy-paste). This module finds a local copy (set
 BCP_DIR to use an existing one), or clones it into third_party/, and makes its modules
-importable.
+importable. On first use it also builds the benchmark's ordinary-user text pool
+(GoEmotions comments, downloaded from GitHub); the word vectors download on first use too.
 """
 import os, sys, subprocess
 from config import ROOT
@@ -18,6 +19,9 @@ def path():
     src = os.path.join(d, "src")
     if src not in sys.path:
         sys.path.insert(0, src)
+    if not os.path.exists(os.path.join(d, "data", "organic_chat.txt")):
+        import prepare_pools                       # builds the ordinary-user text pool once
+        prepare_pools.build_chat()
     return d
 
 
